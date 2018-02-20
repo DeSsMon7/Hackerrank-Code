@@ -17,4 +17,4 @@ Write a query to print the list of CITY that does not start with vowels and does
 
 --Solution
 
-select distinct city from station where regexp_like(city, '^[^aeiouAEIOU].*[^aeiouAEIOU]$');
+select distinct city from station where regexp_like(city, '^[^aeiouAEIOU]|*[^aeiouAEIOU]$');
